@@ -4,9 +4,7 @@ def game_hash
     home: {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
-      players: [
-        player_stats("Alan Anderson")
-        {
+      players: [{
         player_name: "Alan Anderson",
         number: 0,
         shoe: 16,
@@ -171,7 +169,7 @@ def player_stats(input)
       if key == :players
         value.each do |player|
           if input == player[:player_name]
-            player.delete(:player_name) # having player name inside the hash was a bad idea!
+            
             return player
           end
         end
