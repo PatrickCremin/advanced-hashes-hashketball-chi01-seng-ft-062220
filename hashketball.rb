@@ -137,22 +137,4 @@ def teams
   game_hash.values
 end
 
-def player_stats(player_name)
-  statistics = [
-                :number,
-                :shoe,
-                :points,
-                :rebounds,
-                :assists,
-                :steals,
-                :blocks,
-                :slam_dunks
-               ]
 
-  # There are definitely different ways to do this. In fact, this is probably not
-  # the best way. Whenever you see an empty object defined right before an each
-  # loop and then that object being returned, it's generally a "bad code smell".
-  stats_hash = {}
-  statistics.each do |stat|
-    stats_hash[stat] = iterate_through_players_for(player_name, stat)
-  end
