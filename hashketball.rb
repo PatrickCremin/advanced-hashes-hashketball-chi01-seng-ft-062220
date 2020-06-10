@@ -156,4 +156,5 @@ def players
   home_players + away_players
 end
 
-
+def winning_team
+  
