@@ -133,4 +133,6 @@ def team_colors(team_name)
   team.fetch(:colors)
 end
 
-
+def teams
+  game_hash.values
+end
