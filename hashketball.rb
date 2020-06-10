@@ -157,4 +157,7 @@ def players
 end
 
 def winning_team
-  
+  def team_names
+  teams.map do |team|
+    team[:team_name]
+  end
