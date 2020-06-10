@@ -142,3 +142,6 @@ def find_the_team(team_name)
 end
 
 def big_shoe_rebounds
+   player = player_biggest_shoe_size
+  player.fetch(:rebounds)
+end
