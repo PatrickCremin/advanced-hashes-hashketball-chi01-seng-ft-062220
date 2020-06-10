@@ -157,14 +157,4 @@ def players
 end
 
 def winning_team
-  game_hash.each do |team, game_data|
-    game_data[:players].each do |player|
-      scores[game_data[:team_name]] += iterate_through_players_for(player[:player_name], :points)
-    end
-def team_names
-  teams.map do |team|
-    team[:team_name]
-  end
-
-  scores.max_by { |k,v| v }.first
-end
+  
