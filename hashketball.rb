@@ -156,7 +156,6 @@ def players
   home_players + away_players
 end
 
-def winning_team
   def team_names
   teams.map do |team|
     team[:team_name]
