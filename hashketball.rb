@@ -160,3 +160,9 @@ end
   teams.map do |team|
     team[:team_name]
   end
+  
+  def player_numbers(team_name)
+  find_the_team(team_name)[:players].map do |player|
+    player[:number]
+  end
+end
